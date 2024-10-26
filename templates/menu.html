@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Menú de Opciones</title>
+        <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+<body>
+    <div class="container menu-container">
+        <div class="card menu-card shadow">
+            <div class="card-body text-center">
+                <h3 class="card-title mb-4">Menú Principal</h3>
+                <div class="d-grid gap-3">
+                    <button hx-post="/api/productos" type="button" class="btn btn-primary btn-lg">Maestro de Productos</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Maestro de Clientes</button>
+                    <button type="button" class="btn btn-primary btn-lg">Cotizaciones</button>
+                </div>
+            </div>
+        </div>
+    </div>       
+    <script src="/bootstrap.js"></script>
+    <script src="/htmx.min.js"></script>
+</body>
+</html>

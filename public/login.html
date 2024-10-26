@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+<body>
+     <div class="container login-container">
+        <div class="card login-card shadow">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Iniciar Sesión</h3>
+                <form action="/api/loguear" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="jperez" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clave" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="clave" name="clave"  placeholder="Contraseña" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>       
+    <script src="/bootstrap.js"></script>
+    <script src="/htmx.min.js"></script>
+</body>
+</html>
